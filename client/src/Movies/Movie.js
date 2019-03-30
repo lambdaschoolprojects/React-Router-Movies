@@ -24,8 +24,6 @@ const getMovie = (movies, match) => {
    movieData = movies.find(movie => movie.id === Number(match.params.id));
   }
 
-  //console.log(movieComponent);
-
   return <MovieCard {...movieData} />;
 }
 
